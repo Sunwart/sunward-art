@@ -4,45 +4,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunward Art</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;700;800&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
-      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Brand</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./favicon.ico" />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="./index.html">Лого</a
-        ><!--  По центру між основною навігацією -->
-        <ul>
-          <li><a href="#">Про нас</a></li>
-          <li><a href="#">Галерея</a></li>
+      <div class="container header">
+        <nav class="logo-menu">
+          <a href="./index.html" class="link"
+            ><span class="logo">Sunward</span> <span class="logo-ending">Art</span></a
+          >
+          <ul class="list menu">
+            <li><a href="#" class="link nav-link">Про бренд</a></li>
+            <li><a href="#" class="link nav-link">Галерея</a></li>
+            <li class="shop-menu">
+              <a href="#" class="link nav-link">Крамничка</a>
+              <ul class="list sub-menu">
+                <li class="sub-menu-item"><a href="#">Категорія 1</a></li>
+                <li class="sub-menu-item"><a href="#">Категорія 2</a></li>
+                <li class="sub-menu-item"><a href="#">Категорія 3</a></li>
+                <li class="sub-menu-item"><a href="#">Категорія ...</a></li>
+                <li class="sub-menu-item"><a href="#">Акції</a></li>
+                <li class="sub-menu-item"><a href="#">Оплата і доставка</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="link nav-link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="list shop-acc-icons">
           <li>
-            Mагазин
-            <ul>
-              <li><a href="#">Категорія 1</a></li>
-              <li><a href="#">Категорія 2</a></li>
-              <li><a href="#">Категорія 3</a></li>
-              <li><a href="#">Категорія ...</a></li>
-            </ul>
-            <ul>
-              <li><a href="#">Акції</a></li>
-              <li><a href="#">Оплата та доставка</a></li>
-            </ul>
+            <a href="#" class="shop-icon">
+              <svg width="25" height="25" class="icon">
+                <use href="./images/icons.svg#icon-shop"></use>
+              </svg>
+            </a>
           </li>
-          <li><a href="#">Контакти</a></li>
+          <li>
+            <a href="#" class="shop-icon">
+              <svg width="25" height="25" class="icon">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
-        <ul>
-          <li><a href="#">Особистий кабінет (іконка)</a></li>
-          <li><a href="#">Кошик (іконка)</a></li>
-        </ul>
-      </nav>
+      </div>
     </header>
-    <main></main>
+    <main>
+      <section class="container hero-section">
+        <h1 class="title">Lorem ipsum dolor</h1>
+        <h2 class="subtitle">Lorem ipsum dolor sit amet</h2>
+        <h3 class="add-title">Lorem ipsum, dolor sit amet consectetur adipisicing.</h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quasi, accusamus nam
+          natus fuga adipisci quis nisi, voluptatibus porro voluptas magni soluta cumque eveniet
+          nostrum nulla quas at enim quod!
+        </p>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quasi, accusamus nam
+          natus fuga adipisci quis nisi, voluptatibus porro voluptas magni soluta cumque eveniet
+          nostrum nulla quas at enim quod!
+        </p>
+        <button type="button" class="btn">Замовити</button>
+        <button type="button" class="btn-2">Уточнити деталі</button>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
